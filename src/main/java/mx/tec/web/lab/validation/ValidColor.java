@@ -9,20 +9,20 @@ import javax.validation.Constraint;
 import javax.validation.Payload;
 
 /**
- * Interface for validating size for SkuVO
+ * Interface for validating color for SkuVO
  * @author Javier Sosa Puga
  *
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.FIELD })
-@Constraint(validatedBy = SizeValidator.class)
-public @interface ValidSize {
+@Constraint(validatedBy = ColorValidator.class)
+public @interface ValidColor {
 	/**
 	 * 
 	 * @return default message
 	 */
-	String message() default "Invalid size";
+	String message() default "Invalid Color";
 
 	/**
 	 * 
@@ -36,3 +36,4 @@ public @interface ValidSize {
 	 */
 	Class<? extends Payload>[] payload() default {};
 }
+

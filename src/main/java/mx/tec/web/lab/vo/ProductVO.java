@@ -121,4 +121,10 @@ public class ProductVO {
 	public void setComments(List<CommentVO> comments) {
 		this.comments = comments;
 	}
+
+	@Override
+	public String toString() {
+		return "ProductVO [id=" + id + ", name=" + name + ", description=" + description + ", childSkus=" + childSkus
+				+ ", comments=" + comments + "]";
+	}
 }
